@@ -1,0 +1,119 @@
+.perspective {
+    perspective: 1000px;
+}
+
+.flashCardContainer{
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+
+}
+
+.flashCard {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 250ms;
+    transform: perspective(1000px) rotateX(var(--rotate-x, 0deg));
+    /* cursor: url('/images/icons/mouse.svg'), pointer; */
+    cursor: pointer;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: #F7F7F8;
+}
+
+.stack-reverse {
+    --rotate-x: 180deg;
+    box-shadow:
+        /* The top layer shadow */
+        0 -1px 1px rgba(0, 0, 0, 0.15),
+        /* The second layer */
+        0 -10px 0 -5px #eee,
+        /* The second layer shadow */
+        0 -10px 1px -4px rgba(0, 0, 0, 0.15),
+        /* The third layer */
+        0 -20px 0 -10px #eee,
+        /* The third layer shadow */
+        0 -20px 1px -9px rgba(0, 0, 0, 0.15);
+}
+
+.flipped {
+    background-color: #907df0;
+    color: white;
+}
+
+.flashCard.flip {
+    --rotate-x: 180deg;
+    /* background-color: #F7F7F8; */
+}
+
+.backface-hidden {
+    backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+    transform: rotateX(180deg);
+}
+
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+.flashCardHeadingText{
+    position: absolute;
+    top: 1rem;
+    transition: transform 200ms;
+}
+
+
+/* Positions */
+
+.bottom-4{
+    bottom: 1rem;
+}
+
+.clickDiv{
+    position: absolute;
+    display: flex;
+    gap: 2rem;
+    transition: transform 200ms;
+}
+
+.clickedDiv{
+    top: 1rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.frontItem{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.backItem{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
