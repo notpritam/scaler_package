@@ -21,3 +21,9 @@ npm install notpritam_scaler_package
 ```js
 import {Flashcard, Example} from "notpritam_scaler_package"
 ```
+
+Also Import the CSS Files as Well based on your route
+
+```js
+import "../node_modules/notpritam_scaler_package/dist/index.css";
+```
