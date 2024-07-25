@@ -15,3 +15,9 @@ Install the package via npm:
 
 ```bash
 npm install notpritam_scaler_package
+```
+## Import Components
+
+```js
+import {Flashcard, Example} from "notpritam_scaler_package"
+```
