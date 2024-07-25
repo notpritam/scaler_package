@@ -1,13 +1,13 @@
 {
-  "name": "tsup-react-package-starter",
+  "name": "@notpritam/scaler_package",
   "description": "",
-  "version": "0.0.0",
-  "author": "",
+  "version": "0.0.1",
+  "author": "@notpritam",
   "license": "",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/notpritam/scaler_package"
   },
   "scripts": {
     "dev": "concurrently \"pnpm build --watch\" \"pnpm storybook\" \"pnpm test\" ",
@@ -45,7 +45,7 @@
       "release": true
     },
     "npm": {
-      "publish": false
+      "publish": true
     }
   },
   "engines": {
